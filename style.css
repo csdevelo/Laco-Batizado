@@ -1,0 +1,75 @@
+:root {
+	--main-color: ;
+	--color-font-navbar: #b0702c;
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Funnel Sans", sans-serif;
+	color: black;
+}
+
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	color: black;
+	height: 100vh;
+	weight: 100vw;
+}
+
+
+header {
+	border: 1px dotted blue;
+
+	position: fixed;
+	background-color: #c1fafc;
+	color: #fff;
+	padding: 5px;
+	
+	width: 100vw;
+
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between; /**o menu navegação vai ficar posicionado na margem direita**/
+	align-items: center; /**o container do menu navegação vai ficar posicionado no meio do container, lembrando q o align-items posiciona os itens do eixo transversal - "cross-axis" **/
+
+}
+
+header img {
+	flex: 0 0 200px;
+	
+}
+
+header nav {
+	border: 1px dotted blue;
+
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-end;
+
+}
+
+header nav a {
+	text-decoration: none;
+	color: var(--color-font-navbar);
+	padding: 12px;
+
+}
+
+/* footer {
+	border: 1px dotted blue;
+	margin: 90vh;
+
+	position: fixed;
+	background-color: #c1fafc;
+	color: #fff;
+	padding: 5px;
+	
+	width: 100vw;
+
+}
+*/ 
