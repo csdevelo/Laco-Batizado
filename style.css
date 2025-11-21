@@ -20,6 +20,7 @@
 
 body {
 	font-family: "Funnel Sans", sans-serif;
+	line-height: 1.5em;
 	font-size: 1em;
 	
 	color: black;
@@ -29,11 +30,12 @@ body {
 header {
 	/*border: 1px dotted blue;*/
 
-	/*position: fixed;*/
+	position: fixed;
 	background-color: var(--bg-header);
 	color: var(--color-font-navbar);
 	padding: 5px;
-	height: 14vh;
+	width: 100%;
+	height: 10vh;
 	border-bottom: 2px solid #04f0f8;
 
 	display: flex;
@@ -44,8 +46,8 @@ header {
 
 header img {
 	flex: 0 0 180px;
-	width: 88px;
-	height: 88px;
+	width: 66px;
+	height: 66px;
 	
 }
 
@@ -65,9 +67,12 @@ header nav a {
 }
 
 h1 {
-	color: #faada0;
-	font-size: 3.8rem;
+	color: #ff846e;
+	font-size: 3.6rem;
+	line-height: 1.5;
 	text-shadow: lightslategray 0.1em 0.1em 0.2em;
+
+	padding-top: 90px;
 }
 
 h2 {
@@ -166,17 +171,45 @@ div.text > a {
 	margin-top: 46px;
 }
 
-
-
-
-/* footer {
-	border: 1px dotted blue;
-	margin: 90vh;
-
-	position: fixed;
-	background-color: #c1fafc;
-	color: #fff;
-	padding: 5px;
+/**
+.container-nossos-lacos {
+	height: 100vh;
+	margin: 0 auto;
 
 }
-*/ 
+
+.container-nossos-lacos h2 {
+	text-align: center;	
+	padding: 32px;
+
+}
+
+.container-grid {
+	border: 3px solid blue;
+	
+	display: grid;
+	grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+	place-items: stretch center;
+	place-content: stretch space-evenly;
+	gap: 22px;
+}
+
+.item {
+	border: 3px solid yellow;
+	padding: 25px;
+
+}
+*/
+
+
+footer {
+	/*border: 1px dotted blue;*/
+
+	background-color: var(--bg-header);
+	color: var(--color-font-navbar);
+	padding: 3px;
+
+	text-align: center;
+	font-size: 0.85rem;
+}
+ 
